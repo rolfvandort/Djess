@@ -111,36 +111,38 @@
       Gepensioneerd, maar nog altijd scherp – en charmant.
     </p>
 
-    <div class="buttons">
-      <a class="action-button" href="tel:+31624701371">📞 Bel mijn baasje Rolf</a>
-      <a class="action-button" href="tel:+31655000029">📞 Bel mijn baasje Anne</a>
-      <a href="https://www.instagram.com/djess_k9_?igsh=ZHV0M2t6MW11Mjh5&utm_source=qr">Instagram</a>
-      <a href="    <div class="button-container">
-      <!-- Adresgegevens-knop met toggle -->
-<button
-  onclick="toggleAdresblok()" 
-  style="padding: 15px 25px; font-size: 18px; border: none; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-color: fe5626; color: black; cursor: pointer; margin: 10px;"><u>
-  ADRESGEGEVENS</u>
-</button>
+<!-- Begin knoppen -->
+<div class="buttons">
+  <a class="action-button" href="tel:+31624701371">📞 Bel mijn baasje Rolf</a>
+  <a class="action-button" href="tel:+31655000029">📞 Bel mijn baasje Anne</a>
+  <a href="https://www.instagram.com/djess_k9_?igsh=ZHV0M2t6MW11Mjh5&utm_source=qr">Instagram</a>
 
-<!-- Verborgen adresblok -->
-<div id="adresblok" style="display: none; style="width: 100%; max-width: 800px; margin-top: 5px; margin-bottom: 5px; padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-color: #b5d9f0;">
-  <strong>Woonadres:</strong><br>
-  Hoogbrugplein 3B<br>
-  6221 DB Maastricht
+  <!-- Adresgegevens-knop -->
+  <button onclick="toggleAdresblok()" 
+    style="padding: 15px 25px; font-size: 16px; border: none; border-radius: 15px; 
+           box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-color: #fe5626; color: black; 
+           cursor: pointer;">
+    <u>ADRESGEGEVENS</u>
+  </button>
+
+  <!-- Verborgen adresblok -->
+  <div id="adresblok" style="display: none; width: 100%; max-width: 800px; margin-top: 10px; 
+       padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+       background-color: #b5d9f0; color: black;">
+    <strong>Woonadres:</strong><br>
+    Hoogbrugplein 3B<br>
+    6221 DB Maastricht
+  </div>
 </div>
 
-<!-- JavaScript: open/sluit functie -->
+<!-- JavaScript -->
 <script>
   function toggleAdresblok() {
     var blok = document.getElementById("adresblok");
-    if (blok.style.display === "none" || blok.style.display === "") {
-      blok.style.display = "block";
-    } else {
-      blok.style.display = "none";
-    }
+    blok.style.display = (blok.style.display === "none" || blok.style.display === "") ? "block" : "none";
   }
-</script></a>
+</script>
+
 
 <img src="https://i.postimg.cc/NFy06gSk/temp-Imagetext-Y7.avif" alt="Djess de Mechelse Herder">
     </div>
