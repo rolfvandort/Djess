@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Djess - Digitale Visitekaart</title>
+  <style>
+    :root {
+      --bg-light: #e0e0e0;
+      --card-dark: #2b2b2b;
+      --text-light: #f0f0f0;
+      --accent: #444;
+      --highlight: #777;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      background-color: var(--card-dark);
+      color: var(--text-light);
+      border-radius: 20px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0 1rem;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: var(--highlight);
+      text-align: center;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+      border: 3px solid var(--highlight);
+      margin: 1.5rem 0;
+    }
+
+    .card p {
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      width: 100%;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.9rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: var(--highlight);
+      box-shadow: 0 0 10px var(--highlight);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1><u>Djess</u></h1>
+    <h2>Ex-politiehond, fulltime hartendief. <br> Ik vind volwassenen fantastisch maar houdt niet zo van kinderen..!</h2>
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/wvj5dmRx/temp-Imagefm-HVr-L.avif" alt="Djess de Mechelse Herder">
+    </div>
+
+    <p>
+      Gespecialiseerd in geurherkenning, het opsporen van eten en het stelen van aandacht.<br>
+      Gepensioneerd, maar nog altijd scherp – en charmant.
+    </p>
+
+    <div class="buttons">
+      <a class="action-button" href="tel:+31624701371">📞 Bel mijn baasje Rolf</a>
+      <a class="action-button" href="tel:+31655000029">📞 Bel mijn baasje Anne</a>
+      <a href="https://www.instagram.com/djess_k9_?igsh=ZHV0M2t6MW11Mjh5&utm_source=qr">Instagram</a>
+      <a href="    <div class="button-container">
+      <!-- Adresgegevens-knop met toggle -->
+<button 
+  onclick="toggleAdresblok()" 
+  style="padding: 15px 25px; font-size: 18px; border: none; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-color: fe5626; color: black; cursor: pointer; margin: 10px;"><u>
+  ADRESGEGEVENS</u>
+</button>
+
+<!-- Verborgen adresblok -->
+<div id="adresblok" style="display: none; style="width: 100%; max-width: 800px; margin-top: 5px; margin-bottom: 5px; padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-color: #b5d9f0;">
+  <strong>Woonadres:</strong><br>
+  Hoogbrugplein 3B<br>
+  6221 DB Maastricht
+</div>
+
+<!-- JavaScript: open/sluit functie -->
+<script>
+  function toggleAdresblok() {
+    var blok = document.getElementById("adresblok");
+    if (blok.style.display === "none" || blok.style.display === "") {
+      blok.style.display = "block";
+    } else {
+      blok.style.display = "none";
+    }
+  }
+</script></a>
+
+<img src="https://i.postimg.cc/NFy06gSk/temp-Imagetext-Y7.avif" alt="Djess de Mechelse Herder">
+    </div>
+
+    <footer>
+      &copy; 2025 Djess Industries – Alle pootjes voorbehouden 🐾
+    </footer>
+  </div>
+
+</body>
+</html>
